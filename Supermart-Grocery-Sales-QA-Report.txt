@@ -1,0 +1,51 @@
+SUPERMART GROCERY SALES DASHBOARD — QUALITY ASSURANCE REPORT
+===================================================================
+Project: Supermart Grocery Sales & Retail Analytics Dashboard
+Client/Platform: Sapphire IQ Student Project
+Dataset: Supermart Grocery Sales - Retail Analytics Dataset.csv (9,994 records)
+Date of Audit: November 2, 2026
+Auditor: Varsha Tiwari
+Status: READY TO SUBMIT / PASSED ALL CHECKS
+
+-------------------------------------------------------------------
+1. SOURCE DATA INTEGRITY
+-------------------------------------------------------------------
+[PASS] Total Records Verified: 9,994 transactions.
+[PASS] Duplicate Rows: 0 duplicate records found.
+[PASS] Null / Missing Values: 0 missing values across all 11 columns.
+[PASS] Data Types: Clean string, date, integer, and float representations.
+
+-------------------------------------------------------------------
+2. KPI & CALCULATION ACCURACY CHECK
+-------------------------------------------------------------------
+[PASS] Total Sales: ₹14,956,982.00 (Verified via =SUM(Data!H:H))
+[PASS] Total Profit: ₹3,747,121.20 (Verified via =SUM(Data!J:J))
+[PASS] Total Orders: 9,994 (Verified via =COUNTA(Data!A:A)-1)
+[PASS] Overall Profit Margin: 25.05% (Calculated via Total Profit / Total Sales)
+[PASS] Average Discount: 15.65% (Verified via =AVERAGE(Data!I:I))
+
+-------------------------------------------------------------------
+3. CATEGORY & REGIONAL AGGREGATIONS
+-------------------------------------------------------------------
+[PASS] Category Aggregations: Verified across all 7 categories (Bakery, Beverages, 
+       Eggs/Meat/Fish, Food Grains, Fruits & Veggies, Oil & Masala, Snacks).
+[PASS] Regional Aggregations: Verified across West (₹47.98L), East (₹42.48L), 
+       Central (₹34.68L), and South (₹24.40L).
+[PASS] Sub-Category Ranking: Top sub-category confirmed as Health Drinks (₹10.51L) 
+       followed by Soft Drinks (₹10.33L).
+
+-------------------------------------------------------------------
+4. WORKBOOK INTEGRITY & LAYOUT
+-------------------------------------------------------------------
+[PASS] Sheet Navigation: Structure verified across 3 tabs (Dashboard, Analysis, Data).
+[PASS] Formatting: Currency (₹#,##0) and percentage (0.00%) styles consistently applied.
+[PASS] Visualizations: Category Bar Chart and Regional Pie Chart correctly render 
+       data ranges from the Analysis tab.
+[PASS] Formula Integrity: No broken cell references (#REF!), division by zero (#DIV/0!), 
+       or formula syntax errors detected.
+
+-------------------------------------------------------------------
+5. FINAL AUDIT VERDICT
+-------------------------------------------------------------------
+All business logic, dataset aggregations, and dashboard visualizations have passed QA checks.
+Final Status: READY TO SUBMIT FOR EVALUATION.
